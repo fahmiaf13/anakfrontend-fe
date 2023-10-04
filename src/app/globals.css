@@ -73,6 +73,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  main {
+    height: calc(100vh - 3.5rem);
+  }
   a:hover {
     transition: 200ms;
     opacity: 0.5;
