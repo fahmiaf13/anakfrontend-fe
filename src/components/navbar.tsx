@@ -40,11 +40,19 @@ export default function Navbar() {
             </li>
           ))}
           <li className="flex w-full items-center relative">
-            <Icon icon="ri:search-line" className="absolute left-3" width={20} />
+            <Icon icon="ri:search-line" className="absolute left-3 opacity-30" width={20} />
             <Input className="pl-10" placeholder="search something..." />
           </li>
           <li>
-            <Button className="">Login</Button>
+            <Link href="/login">
+              <Button className="">Login</Button>
+            </Link>
+          </li>
+          <li>
+            {/* <Button className="flex items-center gap-1 bg-transparent hover:bg-primary-foreground/10">
+              <Icon width={42} icon="openmoji:flag-england" />
+              <Icon width={42} icon="openmoji:flag-indonesia" />
+            </Button> */}
           </li>
         </ul>
       </div>
